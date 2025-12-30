@@ -1,0 +1,144 @@
+html{
+    font-size: 14px;
+    background-color: #fb8da0 ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+#title{
+    color: white;
+    align-self: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Copperplate;
+}
+.container{
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: .5rem 3rem;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+}
+.dice{
+    border-radius: 5px;
+    display: inline;
+    text-align: center;
+    color: #fb4570;
+    border: none;
+    margin: 0.3rem;
+    font-size: 3rem;
+    background-color: white;
+}
+#dice-board{
+    align-self: center;
+}
+.dice:hover{
+    color: #fb6b90;
+}
+.dice:active{
+    color:#efebe0;
+}
+.clickedDie{
+    color: #fb8da0;
+}
+#scoring-board{
+    margin-top: 1rem;
+    align-self: center;
+    text-align: center;
+    color: black;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(10, auto);
+}
+#scoring-board button{
+    border-radius: 5px;
+    padding:.3rem;
+    font-size: .8rem;
+    background-color: lightpink;
+    color: black;
+    border: none;
+}
+#scoring-board button:hover{
+    background-color: pink;
+
+}#scoring-board button:active{
+     background-color:hotpink;
+ }
+.score-label, .right, #bonus, #game-buttons{
+    text-align: center;
+    border-radius: 3px;
+    padding: .5rem 1rem 0 1rem;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    height: 3rem;
+    background-color: #efebe0;
+}
+#bonus{
+    background-color: #ff0080;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    color: white;
+    font-size: .9rem;
+}
+#bonus, #game-buttons{
+    grid-column: 1/-1;
+}
+.box{
+    box-sizing: border-box;
+    width: 300px;
+    height: 50px;
+    background-color: #efebe0;
+}
+#game-buttons > button{
+    margin-right: .5rem;
+}
+.footer{
+    background-color: #efebe0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-family: "Times New Roman";
+}
+.footer a{
+    color:palevioletred;
+    font-style: italic;
+}
+#total-score{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Copperplate;
+}
+@media (max-width: 1000px) {
+    html {
+        font-size: 20px;
+    }
+    #title {
+        font-size: 1.2rem;
+    }
+    .container {
+        padding: 0.5rem;
+    }
+    .dice {
+        font-size: 2.8rem;
+        margin: 0.1rem;
+        padding: 0.3rem;
+    }
+    #scoring-board {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 0.3rem;
+    }
+    #bonus {
+        gap: 0.3rem;
+        font-size: 0.8rem;
+    }
+}
